@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="flex justify-center items-center h-screen bg-image">
+      <!-- Card -->
+      <div
+        class="max-w-sm rounded-3xl shadow-2xl bg-white flex flex-col items-center mx-5 text-center"
+      >
+        <!-- Image -->
+        <div class="">
+          <img
+            src="./images/illustration-hero.svg"
+            alt=""
+            class="rounded-t-3xl"
+          />
+        </div>
+        <!-- Content -->
+        <div class="px-5">
+          <h1 class="text-2xl font-bold my-7 text-darkBlue">Order Summary</h1>
+          <p class="pb-7 px-3 text-desaturatedBlue text-md">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <!-- Chosen Plan -->
+          <div
+            class="flex justify-between items-center p-5 bg-veryPaleBlue rounded-2xl mb-7"
+          >
+            <div class="flex items-center gap-x-5">
+              <!-- Icon -->
+              <img src="./images/icon-music.svg" alt="" class="w-14" />
+              <div class="flex flex-col gap-y-2">
+                <h2 class="font-bold text-darkBlue">Annual Plan</h2>
+                <span class="text-desaturatedBlue">$59.99/year</span>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="text-brightBlue font-bold underline hover:text-brightBlue/80 hover:no-underline"
+              >Change</a
+            >
+          </div>
+
+          <!-- Payment Btn -->
+          <button
+            class="shadow-2xl shadow-brightBlue/40 bg-brightBlue text-white w-full py-5 rounded-2xl font-bold hover:bg-brightBlue/80 hover:shadow-brightBlue/50"
+          >
+            Proceed to Payment
+          </button>
+
+          <!-- Cancel Btn -->
+          <button
+            class="my-7 font-bold text-desaturatedBlue hover:text-darkBlue"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://thornensan.netlify.app/" target="_blank">Thornen San</a>.
+    </footer>
+  </body>
+</html>
